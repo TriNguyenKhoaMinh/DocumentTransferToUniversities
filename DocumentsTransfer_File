@@ -1,0 +1,478 @@
+
+## Cables
+
+### 1. Fiber optic cables
+
+The optical fiber elements are typically individually coated with plastic layers and contained in a protective tube suitable for the environment where the cable will be deployed. Standard Fiber Core Sizes:
+
+- Multimode Fiber Core Size: 50um and 62.5um
+	* Jacket Color – Orange Aqua
+	* Data Rate – 10Gb, 40Gb, 100Gb
+	
+![](pictures\red_cable.jpg)
+
+- Single Mode Fiber Core Size: 8 – 9um
+	* Jacket Color – Yellow
+	* Data Rate – 1Gb 
+	
+![](pictures\yellow_cable.jpg)
+
+### 2. Electric cables/connectors
+
+#### 2.1. E3/T3 cables
+
+An E3/T3 cable connects a 1E3/CE3/T3/CT3 interface card to a remote device. The cable connects to the interface card through the SMB75 connector and connects to the remote device through the BNC connector. Each 1E3/CE3/T3/CT3 interface card needs to be connected to a remote device using two E3/T3 cables.
+
+![](pictures\T3_cable.jpg)
+
+![](pictures\structure_t3_cable.jpg)
+
+#### 2.2. E1/T1 cables
+
+Tx stands for transmission, and Rx stands for receiving. The R and T tags on BNC coaxial cables indicate the signal directions on a router. The R and T BNC coaxial cables must be connected to the Tx and Rx interfaces on the remote device.
+
+* 75-Ohm RJ48-to-BNC Cable:
+
+![](pictures\T1_rj48_to_bnc.JPG)
+
+![](pictures\T1_rj48_to_bnc_structure.JPG) 
+
+* 120-Ohm RJ48-to-RJ48 Cable only use to E1: 
+
+![](pictures\T1_rj48_to_rj48.JPG)
+
+![](pictures\T1_rj48_to_rj48_structure.JPG) 
+
+* 100-Ohm RJ48-to-Bantam Cable 
+
+![](pictures\T1_bantam.jpg) 
+
+#### 2.3. Connectors
+
+- The below are connecters used to E1/T1 or E3/T3 cables on test equipments including RJ48C, BNC, Bantam
+
+![](pictures\connectors.jpg) 
+
+- E3/T3 connector on board
+
+![](pictures\T3_connector.jpg) 
+
+- E1/T1 connector on board
+
+![](pictures\RJ48C_connector.jpg) 
+
+## Optical Transceivers
+
+Optical transceiver is widely used to connect network devices like switches, NIC (network interface card) and media converters, which make them necessary in fiber optical connections.
+
+### 1. What Is SFP Module?
+
+SFP module, also known as small form-factor pluggable or mini GBIC (gigabit interface converter), is a compact, hot-pluggable optical transceiver module which is widely used for both telecommunication and data communications applications. Its SFP port accepts both optical modules and copper cables. That’s why it’s developed and supported by many network component vendors. The SFP transceiver module is not standardized by any official standards body, but rather is specified by a multi-source agreement (MSA). The SFP module also supports SONET, Gigabit Ethernet and other communication standards.
+
+![](pictures\sfp.JPG) 
+
+### 2. What’s the difference between singlemode SFP and multimode SFP? 
+
+There are three main differences between singlemode SFP (SMF SFP) and multimode SFP (MMF SFP). 
+
+- The first one is the fiber cable used with them. Singlemode fiber has a smaller core than multimode fiber, and it allows unlimited bandwidth and lower loss. While multimode fiber can propagate multiple modes of light. 
+
+- The second one is the transmission distance. Singlemode SFP transceiver is often used in long-run links up to 120km, but multimode SFP module is used in short applications. 
+
+- The last one is the cost. Singlemode SFP is more expensive than multimode SFP due to the use of different light emitting unit. 
+
+![](pictures\single_vs_multi_mode.JPG) 
+
+### 3. What’s the difference between SFP and SFP+?
+
+SFP and SFP+ have the same size and appearance. The main differenceaa between SFP and SFP+ is that SFP is often used for 100Base or 1000Base applications, while the SFP+ is used in Gigabit Ethernet applications. And the data rate and transmission distance of them are also different. For example, SFP supports speed up to 4Gbps Fibre Channel transceiver, while the speed of SFP+ transceiver is up to 10.3125Gbps. 
+
+* Ethernet Application
+
+![](pictures\sfp_vs_sfpPlug_ethernet.JPG) 
+
+* SONET/SDH Application
+
+![](pictures\sfp_vs_sfpPlug_sdh.JPG) 
+
+#### 3.1. SONET/SDH SFP 
+
+SONET/SDH SFP module can be divided into OC-3/STM-1 SFP, OC-12/STM-4 SFP, and OC-48/STM-16 SFP. They all support short reach (2km), intermediate reach (15km) and long reach (80km). Take Cisco SONET/SDH SFP module as an example, they have well-defined product IDs, making it easy for you to order the appropriate module. 
+
+* OC3/STM SFP and OC12/STM4 SFP 
+
+![](pictures\cisco_oc3_oc12.JPG) 
+
+* OC48/STM16 SFP
+
+![](pictures\cisco_oc48.JPG) 
+
+#### 3.2. Ethernet SFP
+
+Gigabit Ethernet (GE) came into use in 1999 and has been gradually supplanting Fast Ethernet (FE) in wired local networks, due to the fact of being considerably faster. The transmission hardware used for connecting GE supported devices retains the compact Small Form-factor Pluggable (SFP) package. SFP is often called mini-GBIC (Gigabit Interface Converter). Because it is smaller size and has replaced GBIC modules in most 1Gb applications. The initial Gigabit Ethernet hardware standard was produced even one year earlier than its use. It is IEEE802.3z (1000BASE-X), which required optical fiber. Other Gigabit Ethernet standard SFP transceivers or non-standard but industry accepted Gigabit SFP transceivers were introduced successively in the past years.
+
+Connectors include the following:
+
+* Dual LC/PC connector (1000BASE-SX, 1000BASE-LX/LH, 1000BASE-EX and 1000BASE-ZX)
+
+![](pictures\1000BaseSX.jpg) 
+
+* RJ-45 connector (1000BASE-T)
+
+![](pictures\1000base_T.JPG) 
+
+#### 3.3. SONET/SDH or Ethernet SFP+ 
+
+![](pictures\sfp_plug.JPG) 
+
+#### 3.4. OTN SFP (CWDM and DWDM)
+
+ ![](pictures\1g_10g_otn_sfp.JPG) 
+
+## Commercial Tester
+
+Depending on the topologies and features that you need to verify.
+
+- Transport Network including SONET/SDH, PDH, Jitter, Wander, OTN features
+- Ehternet Network
+
+### 1. Transport and Ethernet Testing: 
+
+#### 1.1. Used to verified SONET/SDH or PDH, DSn technologies:
+
+- For networks using SONET, SDH, DWDM, ATM, PDH, or DSn technologies. The below are some key features:
+
+	* SONET/SDH testing at 51 Mb/s, 155 Mb/s, 622 Mb/s, 2.5 Gb/s. 
+	* 10/100/1000 Mb/s electrical Ethernet interfaces.
+	* T-carrier/PDH testing at T1, E1, E3, DS3 and E4 rates. 
+	* Fully featured configurations, including BERT, errors, alarms, performance and pointer analysis and synchronization testing, including service disruption measurements and path overhead (POH) capture with triggers 
+	* Support O.172/O173 compliant Jitter and Wander testing for T1, E1, E3, DS3, STM-1 electrical as well as 155M, 622M.
+
+* T-BERD/MTS family of VIAVI
+
+![](pictures\tberd8000.jpg) 
+
+* MT1100A of Anritsu
+
+![](pictures\anritsu1100a.jpg)
+
+#### 1.2. Used to verified OTN or Ethernet technologies:
+
+- For networks using OTN and Ethernet technologies. The below are some key features:
+
+	* OTN: up to OTU4 with ODU Muxing down to ODU0; ODUflex, ODU multichannel, and FlexO	
+	* A high-reliability network can be configured by using error correction during transmission (Forward Error Correction: FEC).
+	* Using the OTN switching function supports data transmission to the destination with assured reliability.
+
+- The VIAVI ONT 6xx Product Family of VIAVI
+
+![](pictures\ont603.jpg)
+
+### 2. Network analyzer
+
+- Do capture and verify packets at PSN side. The below are some key features:
+
+	* Emulate two PTP masters for BMCA and G.8265 conformance test
+	* Capture and replay PDV stress profile
+	* Run ITU-T and MEF-18 test case
+	* Prove SyncE Jitter and Wander to G.8262
+	* PTP testing for Master Clock, Slave Clock, Boundary Clock and Transparent Clock devices
+	* Add latency, jitter, errors, dropped packets to prove OAM implementation
+	* Stateful Layer 2-7 traffic generation and analysis
+	* Testing of large scale DHCP or PPPoE configurations to improve equipmentselection, develop competitive SLAs, and clarify network impact
+
+- We can use the following test equipments.
+
+	* Anue system of IXIA
+
+	![](pictures\anue3500.jpg) 
+
+	* Calnex paragon-X of Calnex Solutions
+
+	![](pictures\calnex.jpg) 
+
+
+	* Spirent Test Center of Spirent
+
+	![](pictures\spirent_test_center.jpg) 
+
+## Tools
+
+### 1. Used to load FPGAs 
+
+Depending on FPGAs that you are using. 
+
+- Altera FPGAs: 
+
+	* If you are using Altera FPGAs, you need to prepare USB Blaster to load image on board.
+
+	![](pictures\usb_blaster.jpg) 
+
+	* You should install Quartus Programmer on your computer for loading. 
+
+	![](pictures\quartus.jpg) 	
+
+- Xilinx FPGAs: 
+
+	* If you are using Xilinx FPGAs, you need to prepare Xilinx Platform Cable USB II to load image on board.
+
+	![](pictures\xilinx_usb.jpg)
+
+	* You should install Vivado Lab Edition on your computer for loading.
+
+	![](pictures\vivado_lab.jpg)
+	
+- Some boards can be loaded by command line. You need to do FTP image to boards by Filezilla or WinSCP
+
+### 2. Use to configure IP address or setup driver for boards
+
+You need to prepare USB to COM cable to setup driver or configure IP addresss for your boards.
+
+![](pictures\comUsb.jpg)
+
+### 3. Tools used to execute command line on Windows
+
+- Tera term
+
+![](pictures\tera_term.jpg)
+
+- Putty
+
+![](pictures\putty.jpg)
+
+### 4. Common tools used to testing process 
+
+- To capture and analyze packets. You should use Wireshark 
+
+![](pictures\wireshark.jpg)
+
+- To transfer FPGA image to board. You should use Filezilla or WinSCP
+
+![](pictures\winscp_filezilla.jpg)
+
+- To analyze Jitter or Wander Measurement. You should use Analysis of TIE-MTIE-TDEV
+
+![](pictures\tie_mtie_analyze.jpg)
+
+## BRING UP THE BOARD
+
+### 1. PREPARE TO BRINGUP BOARD
+
+- Xilinx USB or USB Blaster (depend on FPGAs)
+
+* COM to USB cable
+
+- Optical cable and SFP
+
+- Serial interface including T1 and T3 cables 
+
+- Tester equipments such as T-berd 8000 
+
+- FPGA and SDK to do diagnostic
+
+- Personal Computer 
+
+- Tools on Personal Computer
+
+	* Putty or Tera Term
+
+	* Vivado Lab Edition or Quartus
+
+### 2. IP ADDRESS & GATEWAY CONFIGURATION
+
+#### 2.1. IP Address Configuration: 
+
+Please follow the steps below to change IP address of the board 
+
+* Step 1. Use RS232 (COM port) to connect to the board
+
+* Step 2. Type the command to change IP address: 
+
+	```ipconfig <ip_address> <ip_subnet_mask>```
+	
+	```Example: ipconfig 192.168.0.1 255.255.255.0```
+
+* Step 3. Power off and power on
+
+* Step 5. Do the step 1 again to login to the board
+
+* Step 6. Check the new IP or find an IP of the board by using command: ifconfig 
+
+The result like the picture below
+
+![](pictures\ip_address_configs.jpg)
+
+#### 2.2. Gateway Configuration: 
+
+Please follow the steps below to change the gateway of the board
+
+* Step 1. Use RS232 or telnet to connect to the board
+
+* Step 2. Type the command
+
+	```dggconfig <default_gateway_address>```
+
+	```Example: dggconfig 192.168.255.254```
+
+* Step 3. Type “reboot” command to reboot the board for this configuration to become effective.
+
+* Step 4. Power off and power on
+
+* Step 5. Do the step 1 again to login to the board
+
+* Step 6. Check the new IP or find an IP of the board by using command:route
+
+The result like the picture below:
+
+![](pictures\gateway_configs.jpg)
+
+### 3. HOW TO CHANGE IP ADDRESS & SUBNET MASK OF A PC 
+
+Please follow the steps below to change IP Address and subnet mask of a PC in order that it can communicate with the board. These steps are applicable in case the user uses Windows XP 
+
+* Step 1. Go to Start\Settings\Network Connections
+
+* Step 2. Double Click to the icon Local Area Connection
+
+* Step 3. Select the button Properties
+
+* Step 4. Select Internet Protocol
+
+* Step 5. Set new IP address and subnet mask for the PC
+
+### 4. HOW TO USE FTP TO TRANSFER FILE BETWEEN A PC AND THE BOARD 
+
+#### 4.1. Use Windows Explorer
+
+If the PC use Windows OS, Windows Explorer can be used to make FTP connection with Board 
+
+* Step 1. In Windows, open Windows Explorer
+
+* Step 2. Type the address in Address bar: ftp://user@<IP address of Board>
+
+* Step 3. On the folder opened, copy all files that need to be transferred to this folder
+
+* Step 4. Telnet to login to board, change directory to /home/user using the following commands
+
+	```cd /home/user```
+
+* Step 5. Change mode for the all files in the Software binary package in the board:
+
+````chmod –R 777 ./*```
+
+* Step 6. Power off and power on Board again to run new Software 
+
+#### 4.2. Use Command Windows 
+
+The followings are steps to transfer files to board:
+
+* Step 1. On PC, create the new folder C:\sdk.bin
+
+* Step 2. Copy all files that need to be transfer to board into C:\sdk.bin
+
+* Step 3. Run Start\Run\cmd.exe
+
+* Step 4. On the new Window opened, type the command
+
+	```cd c:\sdk.bin```
+
+* Step 5. FTP to the board 
+
+	```ftp <IP of the board>```
+
+* Step 6. Change directory to /home/user using the following command
+
+	```cd /home/user```
+
+* Step 7. Type the following command to change transfer mode to binary
+
+	```binary```
+
+* Step 8. Type the command below to delete all the current files in the folder /home/user in the Board
+
+	```mdelete *```
+
+* Step 9. Type the command below to copy all the files from the folder C:\sdk.bin to the folder
+
+	```/home/user```
+
+	```mput *```
+
+* Step 10. Check all files uploaded by using command:ls
+
+* Step 11. Type the command below to exit FTP quit
+
+* Step 12. Telnet to login to board, change directory to /home/user using the following command
+
+	```cd /home/user```
+
+* Step 13. Change mode for the all files in the Pseudowire CodeChip Software binary package in the board:
+
+	```chmod –R 777 ./*```
+
+* Step 14. Power off and power on Board again to run new Software 
+
+## VERIFICATION PROCESS 
+
+To ensure FPGA and SDK work fine before they are released to customer. We need to perform QA all features which supported on this FPGA/SDK.
+
+The below is Verification Process:
+
+![](pictures\testing_process.jpg)
+
+We only focus Perform QA and Bug Tracking 
+
+### 1. HOW TO PERFORM QA 
+
+#### 1.1. Bring up data path
+
+We need to bring up some data paths after have FPGA & SDK to ensure all serviced and interfaces works fine. 
+
+The below are steps to bring up data path:
+
+* Step 1. Connect board with Test equipment
+
+* Step 2. Get FPGA and SDK 
+
+* Step 3. Load FPGA and SDK on board 
+
+* Step 4. Configure mapping/interfaces/services which need to test 
+
+* Step 5. Check status on board and Tester. Ensure data path work fine, Tester does not have any alarms and errors 
+
+#### 1.2. Funstional Testing
+
+Refer Features List to prepare test equipments such as Testers, Cables, SFP,... and Command/Script to configs on board
+
+The below are steps to check one test-case:
+
+* Step 1. Choose test-case need to verify
+
+* Step 2. Connect board with Test equipment
+
+* Step 3. Load FPGA and SDK on board 
+
+* Step 4. Refer to Test Procedure to know how verify that test-case 
+
+	- Type commands to configs test-case on board
+
+	- Refer pass condition on Test Procedure to define status of test-case
+
+* Step 5. If the test-case met all steps defined in Test Procedure, it is passed. Vice versa, it is failed
+
+	- If test-case is PASSED, we will fill status into Test Result
+
+	- If test-case is FAILED, we will raise an issue on Bug Tracking
+
+### 2. HOW TO RAISE AN ISSUE ON BUG TRACKING:
+
+To raise issue on Bug Tracking, we need the following information
+
+* Bug description 
+
+* Topologies 
+
+* Commands to configs or configuration script 
+
+* Define module or feature have issue
+
